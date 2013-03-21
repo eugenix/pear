@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0         http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd" version="2.0">
+  <name>dbmigrator</name>
+  <channel>eugenix.github.com/pear</channel>
+  <summary>One-line summary of your PEAR package</summary>
+  <description>Longer description of your PEAR package</description>
+  <lead>
+    <name>Eugene Kurbatov</name>
+    <user>eugenix</user>
+    <email>ekur@i-loto.ru</email>
+    <active>yes</active>
+  </lead>
+  <date>2013-03-21</date>
+  <time>18:01:54</time>
+  <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+  </version>
+  <stability>
+    <release>stable</release>
+    <api>stable</api>
+  </stability>
+  <license uri="http://www.opensource.org/licenses/mit-license.html">MIT</license>
+  <notes>Initial release.</notes>
+  <contents>
+    <dir name="/" baseinstalldir="dbmigrator">
+      <file name="channel.xml" role="php" md5sum="5a11617ef855ffa10b66bca9daf111b9"/>
+      <file name="dbmigrator" role="script" baseinstalldir="/" md5sum="1183fc90c9da76c10f21b7e004fa3fb3">
+        <tasks:replace type="pear-config" from="/usr/bin/env php" to="php_bin"/>
+        <tasks:replace type="pear-config" from="@php_bin@" to="php_bin"/>
+        <tasks:replace type="pear-config" from="@bin_dir@" to="bin_dir"/>
+        <tasks:replace type="pear-config" from="@pear_directory@" to="php_dir"/>
+      </file>
+      <file name="dbmigrator.bat" role="script" baseinstalldir="/" md5sum="061906adbdc7260ef2691280560ce343">
+        <tasks:replace type="pear-config" from="/usr/bin/env php" to="php_bin"/>
+        <tasks:replace type="pear-config" from="@php_bin@" to="php_bin"/>
+        <tasks:replace type="pear-config" from="@bin_dir@" to="bin_dir"/>
+        <tasks:replace type="pear-config" from="@pear_directory@" to="php_dir"/>
+      </file>
+      <file name="feed.xml" role="php" md5sum="116050f9588b9f6aa3e24ab7cb12f77f"/>
+      <file name="index.html" role="php" md5sum="642dfb065105f1ee771263e2c5a389d1"/>
+      <file name="packages.json" role="php" md5sum="d751713988987e9331980363e24189ce"/>
+      <file name="pearfarm.spec" role="php" md5sum="5a0d7ecca9bf0fffe42d1107e7df6389"/>
+      <file name="pirum.css" role="php" md5sum="4707e3ed9cf317ce47001fa14ef39880"/>
+      <file name="pirum.xml" role="php" md5sum="83ea2f257ac71739141133a612e33d60"/>
+      <dir name="rest">
+        <dir name="c">
+          <dir name="Default">
+            <file name="info.xml" role="php" md5sum="d6b1d901a34e6a2b5e2e733724d64788"/>
+            <file name="packages.xml" role="php" md5sum="e07a365103592ec3db4c2e5dd803ee86"/>
+            <file name="packagesinfo.xml" role="php" md5sum="ecf822856f68dcf9d9b53240bfd83047"/>
+          </dir>
+          <file name="categories.xml" role="php" md5sum="0fe66a7ed8fe324083ce43d0758a8b13"/>
+        </dir>
+        <dir name="m">
+          <file name="allmaintainers.xml" role="php" md5sum="c470f6728be023771f1951084421adf8"/>
+        </dir>
+        <dir name="p">
+          <file name="packages.xml" role="php" md5sum="c61c6f523d4ce9859bda4345fd414f3a"/>
+        </dir>
+      </dir>
+    </dir>
+  </contents>
+  <dependencies>
+    <required>
+      <php>
+        <min>5.0.0</min>
+      </php>
+      <pearinstaller>
+        <min>1.4.0</min>
+      </pearinstaller>
+    </required>
+  </dependencies>
+  <phprelease>
+    <filelist>
+      <install as="dbmigrator.bat" name="dbmigrator.bat"/>
+      <install as="dbmigrator" name="dbmigrator"/>
+    </filelist>
+  </phprelease>
+</package>
