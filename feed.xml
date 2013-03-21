@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://eugenix.github.com/pear</id>
+    <updated>2013-03-21T13:17:28+04:00</updated>
+    <title>DB Migrator Latest Releases</title>
+    <link href="http://eugenix.github.com/pear/feed.xml" rel="self" />
+    <author>
+        <name>http://eugenix.github.com/pear</name>
+    </author>
+
+
+</feed>

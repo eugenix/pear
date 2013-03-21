@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<server>
+  <name>eugenix.github.com/pear</name>
+  <summary>DB Migrator</summary>
+  <alias>dbmigrator</alias>
+  <url>http://eugenix.github.com/pear</url>
+</server>
